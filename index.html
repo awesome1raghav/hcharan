@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIMA CHARAN — AI · Backend · Agentic</title>
+  <meta name="description" content="HIMA CHARAN — AI-focused developer building intelligent systems, backend architecture and agentic AI." />
+  <!-- Flag that JS is active BEFORE CSS paints, so reveal-animations only hide
+       content when the script can actually reveal it (no-JS = fully visible). -->
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#home" aria-label="HIMA CHARAN — home">HC</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#home"     class="nav__link is-active">HOME</a>
+      <a href="#about"    class="nav__link">ABOUT</a>
+      <a href="#projects" class="nav__link">PROJECTS</a>
+      <a href="#skills"   class="nav__link">SKILLS</a>
+      <a href="#journey"  class="nav__link">JOURNEY</a>
+      <a href="#contact"  class="nav__link">CONTACT</a>
+    </nav>
+    <button class="nav__burger" id="navBurger" type="button" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ============ 1 · HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <video
+        class="hero__video" id="heroVideo"
+        autoplay muted loop playsinline preload="auto"
+        poster="assets/hero-poster.svg">
+        <source id="heroVideoSource" src="assets/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__fallback" id="heroFallback" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__dissolve" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero__content" id="heroContent">
+      <!-- Identity text hides automatically when a real video/image background
+           is playing, so it never collides with artwork that has its own title. -->
+      <div class="hero__identity">
+        <p class="hero__eyebrow">// PORTFOLIO — 2026</p>
+        <h1 class="hero__title">HIMA CHARAN</h1>
+        <p class="hero__tagline">AI&nbsp; · &nbsp;BACKEND&nbsp; · &nbsp;AGENTIC&nbsp;AI</p>
+      </div>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#projects">View Work</a>
+        <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#about" aria-label="Scroll to about">
+      <span class="hero__scroll-dot"></span>
+    </a>
+  </section>
+
+  <!-- ============ 2 · ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <p class="eyebrow reveal">// 01 — ABOUT</p>
+      <h2 class="about__statement reveal">
+        I DON'T JUST BUILD SOFTWARE.<br />
+        <span class="accent">I BUILD SYSTEMS THAT THINK.</span>
+      </h2>
+      <p class="about__intro reveal">
+        I'm Hima Charan — an AI-focused developer exploring intelligent systems,
+        backend architecture and agentic AI. I take complicated problems, break
+        them down, and turn them into systems that actually work in the real world.
+      </p>
+
+      <ol class="capabilities">
+        <li class="capability reveal">
+          <span class="capability__no">01</span>
+          <span class="capability__name">AI&nbsp;SYSTEMS</span>
+          <span class="capability__desc">Models, inference &amp; intelligent pipelines.</span>
+        </li>
+        <li class="capability reveal">
+          <span class="capability__no">02</span>
+          <span class="capability__name">BACKEND</span>
+          <span class="capability__desc">APIs, data &amp; resilient architecture.</span>
+        </li>
+        <li class="capability reveal">
+          <span class="capability__no">03</span>
+          <span class="capability__name">AGENTIC&nbsp;AI</span>
+          <span class="capability__desc">Autonomous agents, tools &amp; orchestration.</span>
+        </li>
+        <li class="capability reveal">
+          <span class="capability__no">04</span>
+          <span class="capability__name">PROBLEM&nbsp;SOLVING</span>
+          <span class="capability__desc">Decomposing hard problems into working systems.</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 3 · PROJECTS ============ -->
+  <section class="projects" id="projects">
+    <div class="wrap projects__head">
+      <p class="eyebrow reveal">// 02 — PROJECTS</p>
+      <h2 class="section-title reveal">SELECTED SYSTEMS</h2>
+    </div>
+
+    <!-- PROJECT 01 -->
+    <article class="project">
+      <div class="project__inner wrap">
+        <div class="project__visual reveal" aria-hidden="true">
+          <span class="project__ghost">01</span>
+          <span class="project__visual-tag">// preview</span>
+        </div>
+        <div class="project__body reveal">
+          <p class="project__no">PROJECT 01</p>
+          <h3 class="project__name">FARMTOMARKET</h3>
+          <p class="project__field">AI × AGRICULTURE × REAL-WORLD IMPACT</p>
+          <p class="project__desc">
+            A system that connects growers directly to markets — using AI to
+            forecast demand, price fairly and cut out the layers that erode a
+            farmer's margin.
+          </p>
+          <dl class="project__meta">
+            <div><dt>ROLE</dt><dd>AI / SYSTEM DESIGN</dd></div>
+            <div><dt>TECHNOLOGY</dt><dd>Python · ML · Backend</dd></div>
+            <div><dt>STATUS</dt><dd><span class="dot dot--live"></span> ACTIVE</dd></div>
+          </dl>
+          <a class="project__link" href="#" aria-label="View FarmToMarket project">View Project →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 02 -->
+    <article class="project project--alt">
+      <div class="project__inner wrap">
+        <div class="project__visual reveal" aria-hidden="true">
+          <span class="project__ghost">02</span>
+          <span class="project__visual-tag">// preview</span>
+        </div>
+        <div class="project__body reveal">
+          <p class="project__no">PROJECT 02</p>
+          <h3 class="project__name">AGENTFLOW</h3>
+          <p class="project__field">AGENTIC AI × ORCHESTRATION</p>
+          <p class="project__desc">
+            An orchestration layer where autonomous agents plan, call tools and
+            hand work to each other — turning a single prompt into a coordinated
+            multi-step system.
+          </p>
+          <dl class="project__meta">
+            <div><dt>ROLE</dt><dd>ARCHITECTURE / AGENTS</dd></div>
+            <div><dt>TECHNOLOGY</dt><dd>LLMs · Tooling · RAG</dd></div>
+            <div><dt>STATUS</dt><dd><span class="dot dot--build"></span> IN PROGRESS</dd></div>
+          </dl>
+          <a class="project__link" href="#" aria-label="View AgentFlow project">View Project →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 03 -->
+    <article class="project">
+      <div class="project__inner wrap">
+        <div class="project__visual reveal" aria-hidden="true">
+          <span class="project__ghost">03</span>
+          <span class="project__visual-tag">// preview</span>
+        </div>
+        <div class="project__body reveal">
+          <p class="project__no">PROJECT 03</p>
+          <h3 class="project__name">CORTEX API</h3>
+          <p class="project__field">BACKEND × ML INFERENCE</p>
+          <p class="project__desc">
+            A backend that serves ML models under real traffic — clean APIs,
+            caching and observability so intelligence ships reliably, not just
+            in a notebook.
+          </p>
+          <dl class="project__meta">
+            <div><dt>ROLE</dt><dd>BACKEND / INFRA</dd></div>
+            <div><dt>TECHNOLOGY</dt><dd>Python · APIs · Cloud</dd></div>
+            <div><dt>STATUS</dt><dd><span class="dot dot--build"></span> PROTOTYPE</dd></div>
+          </dl>
+          <a class="project__link" href="#" aria-label="View Cortex API project">View Project →</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ 4 · SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="wrap">
+      <p class="eyebrow reveal">// 03 — SKILLS</p>
+      <h2 class="section-title reveal">TECHNICAL ECOSYSTEM</h2>
+      <p class="skills__lead reveal">Not a checklist — a system. Here's how the pieces connect.</p>
+
+      <div class="skills__diagram reveal">
+        <svg viewBox="0 0 900 520" class="tree" role="img" aria-label="Skills architecture: HIMA CHARAN branches into AI, Backend and Agentic AI, each with sub-skills.">
+          <!-- connectors -->
+          <g class="tree__lines" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M450 78 L450 150" />
+            <path d="M450 150 C450 200 170 170 170 210" />
+            <path d="M450 150 C450 200 450 190 450 210" />
+            <path d="M450 150 C450 200 730 170 730 210" />
+            <!-- AI leaves -->
+            <path d="M170 258 C170 300 80 300 80 340" />
+            <path d="M170 258 C170 300 170 300 170 340" />
+            <path d="M170 258 C170 300 260 300 260 340" />
+            <!-- Backend leaves -->
+            <path d="M450 258 C450 300 360 300 360 340" />
+            <path d="M450 258 C450 300 450 300 450 340" />
+            <path d="M450 258 C450 300 540 300 540 340" />
+            <!-- Agentic leaves -->
+            <path d="M730 258 C730 300 640 300 640 340" />
+            <path d="M730 258 C730 300 730 300 730 340" />
+            <path d="M730 258 C730 300 820 300 820 340" />
+          </g>
+          <!-- animated pulse overlay (same paths, dashed) -->
+          <g class="tree__pulse" fill="none" stroke="var(--accent)" stroke-width="1.5">
+            <path d="M450 78 L450 150" />
+            <path d="M450 150 C450 200 170 170 170 210" />
+            <path d="M450 150 C450 200 450 190 450 210" />
+            <path d="M450 150 C450 200 730 170 730 210" />
+          </g>
+
+          <!-- root -->
+          <g class="node node--root">
+            <rect x="330" y="40" width="240" height="40" rx="8" />
+            <text x="450" y="65">HIMA CHARAN</text>
+          </g>
+          <!-- branches -->
+          <g class="node node--branch">
+            <rect x="90" y="210" width="160" height="46" rx="8" />
+            <text x="170" y="238">AI</text>
+          </g>
+          <g class="node node--branch">
+            <rect x="370" y="210" width="160" height="46" rx="8" />
+            <text x="450" y="238">BACKEND</text>
+          </g>
+          <g class="node node--branch">
+            <rect x="650" y="210" width="160" height="46" rx="8" />
+            <text x="730" y="238">AGENTIC&#160;AI</text>
+          </g>
+          <!-- leaves -->
+          <g class="node node--leaf">
+            <rect x="30"  y="340" width="100" height="36" rx="18" /><text x="80"  y="362">ML</text>
+            <rect x="120" y="340" width="100" height="36" rx="18" /><text x="170" y="362">LLMs</text>
+            <rect x="210" y="340" width="100" height="36" rx="18" /><text x="260" y="362">CV</text>
+
+            <rect x="310" y="340" width="100" height="36" rx="18" /><text x="360" y="362">APIs</text>
+            <rect x="400" y="340" width="100" height="36" rx="18" /><text x="450" y="362">DATABASES</text>
+            <rect x="490" y="340" width="100" height="36" rx="18" /><text x="540" y="362">CLOUD</text>
+
+            <rect x="590" y="340" width="100" height="36" rx="18" /><text x="640" y="362">AGENTS</text>
+            <rect x="680" y="340" width="100" height="36" rx="18" /><text x="730" y="362">RAG</text>
+            <rect x="770" y="340" width="100" height="36" rx="18" /><text x="820" y="362">TOOLS</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5 · JOURNEY ============ -->
+  <section class="journey" id="journey">
+    <div class="wrap">
+      <p class="eyebrow reveal">// 04 — JOURNEY</p>
+      <h2 class="section-title reveal">THE EVOLUTION</h2>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline__track"><div class="timeline__fill" id="timelineFill"></div></div>
+
+        <div class="tl-year reveal">
+          <span class="tl-year__label">2024</span>
+          <ul class="tl-year__items">
+            <li>Started — first lines of code, first real curiosity.</li>
+          </ul>
+        </div>
+        <div class="tl-year reveal">
+          <span class="tl-year__label">2025</span>
+          <ul class="tl-year__items">
+            <li>Built projects end to end.</li>
+            <li>Experimented with ML &amp; backends.</li>
+            <li>Competitions &amp; hackathons.</li>
+          </ul>
+        </div>
+        <div class="tl-year reveal">
+          <span class="tl-year__label">2026</span>
+          <ul class="tl-year__items">
+            <li>Deeper into AI.</li>
+            <li>Agentic systems.</li>
+            <li>Real-world projects.</li>
+          </ul>
+        </div>
+        <div class="tl-year tl-year--now reveal">
+          <span class="tl-year__label">NOW</span>
+          <ul class="tl-year__items">
+            <li>Building systems that think.</li>
+          </ul>
+        </div>
+        <div class="tl-year tl-year--next reveal">
+          <span class="tl-year__label">WHAT'S NEXT?</span>
+          <ul class="tl-year__items">
+            <li>Something worth building. Let's talk.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 · CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact__glow" aria-hidden="true"></div>
+    <div class="wrap contact__inner">
+      <p class="eyebrow reveal">// TRANSMISSION ENDPOINT</p>
+      <p class="contact__prompt reveal">HAVE AN IDEA?</p>
+      <h2 class="contact__headline reveal">LET'S BUILD<br />SOMETHING <span class="accent">REAL.</span></h2>
+
+      <div class="contact__links reveal">
+        <a class="contact__link" href="mailto:hello@himacharan.dev">[ EMAIL ]</a>
+        <a class="contact__link" href="#" target="_blank" rel="noopener">[ LINKEDIN ]</a>
+        <a class="contact__link" href="#" target="_blank" rel="noopener">[ GITHUB ]</a>
+      </div>
+
+      <div class="contact__wordmark reveal">HIMA CHARAN</div>
+      <p class="contact__foot">© 2026 Hima Charan · AI · Backend · Agentic AI</p>
+    </div>
+  </section>
+
+  <script src="hero.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
